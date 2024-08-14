@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="demo.js"></script>
+</head>
+
+<body>
+
+     <div id="tabe"></div>
+
+    <script>
+
+        let tab = document.createElement('table');
+        var tr = document.createElement('tr');
+        tab.appendChild(tr);
+        let data = ["S.No", "Name", "Age", "Address","Ph.Number"];
+        for (let i = 0; i < data.length; i++) {
+            let th = document.createElement('th');
+            tr.appendChild(th);
+            let text = document.createTextNode(data[i]);
+            th.appendChild(text);
+        }
+        tr.style.backgroundColor="orange";
+
+        var tr = document.createElement('tr');
+        tab.appendChild(tr);
+        let data1 = ["1", "Nagesh", "36", "Achiversit","7597852685"];
+        for (let i = 0; i < data1.length; i++) {
+            let td = document.createElement('td');
+            tr.appendChild(td);
+            let text = document.createTextNode(data1[i]);
+            td.appendChild(text);
+        }
+        tr.style.backgroundColor="mediumseagreen";
+
+        var tr = document.createElement('tr');
+        tab.appendChild(tr);
+        let data2 = ["2", "Puni", "37", "Sandel","9736458647"];
+        for (let i = 0; i < data2.length; i++) {
+            let td = document.createElement('td');
+            tr.appendChild(td);
+            let text = document.createTextNode(data2[i]);
+            td.appendChild(text);
+        }
+        tr.style.backgroundColor="slateblue";
+
+        var tr = document.createElement('tr');
+        tab.appendChild(tr);
+        let data3 = ["3", "Thala", "38", "Kolly","4573845678"];
+        for (let i = 0; i < data3.length; i++) {
+            let td = document.createElement('td');
+            tr.appendChild(td);
+            let text = document.createTextNode(data3[i]);
+            td.appendChild(text);
+        }
+        tr.style.backgroundColor="lightgrey";
+
+        var tr = document.createElement('tr');
+        tab.appendChild(tr);
+        let data4 = ["4", "Allu", "39", "Tolly","5678952905"];
+        for (let i = 0; i < data4.length; i++) {
+            let td = document.createElement('td');
+            tr.appendChild(td);
+            let text = document.createTextNode(data4[i]);
+            td.appendChild(text);
+        }
+        tr.style.backgroundColor="dodgerblue";
+
+        var tr = document.createElement('tr');
+        tab.appendChild(tr);
+        let data5 = ["5", "Khan", "40", "Bolly",'7653985987'];
+        for (let i = 0; i < data5.length; i++) {
+            let td = document.createElement('td');
+            tr.appendChild(td);
+            let text = document.createTextNode(data5[i]);
+            td.appendChild(text);
+        }
+        tr.style.backgroundColor="violet";
+
+
+        tab.setAttribute('border','1px solid black');
+        tab.style.width="1300px";
+        tab.style.height="500px";
+        tab.style.textAlign="center";
+        tab.style.margin="auto";
+
+        document.getElementById('tabe').appendChild(tab);
+    </script>
+</body>
+</html>
